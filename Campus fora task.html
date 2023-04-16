@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CAMPUS FORA</title>
+
+    <link rel="icon"
+        href="https://cdn.iconscout.com/icon/premium/png-512-thumb/consulting-1477506-1251356.png?f=avif&w=256"
+        type="image/x-icon">
+</head>
+<style>
+    * {
+        font-family: serif;
+        box-sizing: border-box;
+    }
+
+    /* every element */
+    #dabba {
+        height: 4000px;
+        border: 4px solid black;
+        border-top: none;
+        background-color: rgb(144, 134, 234);
+    }
+
+    /* all the boxez are in it */
+    div.container {
+        background-color: rgb(250, 254, 252);
+        border: 2px solid rgb(12, 132, 136);
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    /* question box */
+    #cont1 {
+        float: left;
+        padding: 0px;
+        padding-top: 10px;
+        margin: 60px 0px 0px 80px;
+        height: 150px;
+        width: 60%;
+    }
+
+    /* upvote/downvote box */
+    img {
+        cursor: pointer;
+        float: left;
+        clear: left;
+        height: 30px;
+        margin: 0px 10px 0px -60px;
+        border: 4px solid rgb(90, 45, 188);
+        border-radius: 100%;
+    }
+
+    img#up {
+        background-color: rgb(52, 221, 148);
+    }
+
+    img#down {
+        background-color: rgb(145, 28, 28);
+        margin-top: 5px;
+        margin: top 2%;
+    }
+
+    /* the rank by options */
+    #cont2 {
+        margin-left: 100px;
+        float: right;
+        padding: 0px;
+        border: 0px;
+
+    }
+
+    #cont2 option {
+
+        color: rgb(29, 23, 23);
+        background-color: rgb(157, 166, 166);
+        border: radius 0px;
+    }
+
+    /* answer box */
+    #cont3 {
+        float: left;
+        clear: left;
+        margin: 10px 0px 0px 80px;
+        padding-top: 0%;
+        height: 300px;
+        width: 60%;
+    }
+
+    /* related question box */
+    #cont4 {
+        float: right;
+        margin: 10px 30px 0px 0px;
+        width: 20%;
+
+    }
+
+    /* comments box */
+    #cont5 {
+        float: left;
+        margin: 3px 0px 0px 80px;
+        width: 60%;
+        height: 3%;
+    }
+
+    .navbar {
+        /* float: inline-start; */
+        height: 50px;
+        border-radius: 10px 10px 0px 0px;
+        padding-left: 40px;
+        background-color: black;
+    }
+
+    .navbar ul {
+        overflow: auto;
+        /* padding-left: 100px; */
+    }
+
+    .navbar li {
+        font-size: larger;
+        margin: 10px;
+        float: left;
+        list-style: none;
+        color: white;
+
+    }
+
+    .navbar li a {
+        font-size: larger;
+        text-decoration: none;
+        color: rgb(224, 225, 246);
+    }
+
+    .navbar #login {
+        background-color: rgb(205, 33, 33);
+        font-size: 0.8em;
+        float: right;
+        margin: 9px 70px 0px 0px;
+        padding: 3px 9px;
+        border-radius: 5px;
+        border: 55px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">CAMPUS FORA</a></li>
+                <li id="separater">|</li>
+                <li><a href="#">TOPIC-X</a> </li>
+                <li id="login"><a href="#">Profile/Login</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <div id="dabba">
+        <div class="container" id="cont1">
+            <p>
+            <ul>
+                Why didn't I used reactjs?
+            </ul>
+            <ul>
+                :(
+            </ul>
+
+            </p>
+        </div>
+        <div class="container" id="cont3">
+            <div id="imagedivision">
+                <img id="up" src="https://static.thenounproject.com/png/136236-200.png">
+                <img id="down" src="https://static.thenounproject.com/png/136224-200.png" alt="error loading image">
+            </div>
+            <div>
+                <div class="container" id="cont2">
+                    <select name="" id="">
+                        <option value="" style="font-family: monospace ;">rank by</option>
+                        <option value="">upvotes</option>
+                        <option value="">Time created </option>
+                        <option value="">relavancy</option>
+                    </select>
+                </div>
+                <p style="margin:30px 0px 0px 0px ;">Answered by (me)</p>
+                <p>So, on thrusday night when the projects details were given i started watching web dev tutorials,i
+                    almost watched 6 hrs codewithharry and completed all htmls and half of css videos till friday but on
+                    saturday i had 3 quizzes:( so i needed to study too. On saturday night i watched an example project
+                    of codewithharry and so today i decided just to make the page as the given format without any js
+                    logic in it. i started at 10 am almost and now its 8 pm.please don't take it as an excuse, just want
+                    to show that i am really really intersted in this project and i can assure you that i will give as
+                    much time as possible in this project.
+                </p>
+            </div>
+        </div>
+        <div class="container" id="cont4">
+            <p>RELATED QUESTIONS
+            </p>
+            <P>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ </P>
+        </div>
+        <div class="container" id="cont5">
+            <p style="padding-left: 10px;">COMMENTS</p>
+            <p style="padding-left: 10px
+            ;
+            ">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
